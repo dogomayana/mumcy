@@ -1,0 +1,22 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "MacBook",
+      "price": 1400,
+      "image": "https://cdn-0.generatormix.com/images/thumbs/random-foods-generator.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Old Car",
+      "price": "2400",
+      "image": "https://cdn-0.generatormix.com/images/thumbs/random-foods-generator.jpg"
+    },
+    {
+      "id": 3,
+      "name": "W Shoes",
+      "price": 1000,
+      "image": "https://cdn-0.generatormix.com/images/thumbs/random-foods-generator.jpg"
+    }
+  ]
+}
