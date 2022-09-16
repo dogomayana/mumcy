@@ -1,19 +1,21 @@
 import { Route, Routes } from 'react-router-dom';
+import Cart from './components/Cart';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-import { ShoppingCartProvider } from './context/ShoppingCartContext';
+import Home from './Home';
+import {CartProvider} from 'react-use-cart'
 
 function App() {
   return (
-    <ShoppingCartProvider>
-    <div className="w-full bg-white">
+    <div className="w-full">
+      <CartProvider>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Hero/>} />
-        
+        <Route path='/' element={<Home/>} />
+        <Route path='cart' element={<Cart/>} />
       </Routes>
+      </CartProvider>
     </div>
-    </ShoppingCartProvider>
   );
 }
 

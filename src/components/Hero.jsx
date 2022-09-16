@@ -1,6 +1,4 @@
 import React from 'react';
-import Foods from './Foods';
-import Menu from './Menu';
 
 const Hero = () => {
     return (
@@ -21,8 +19,6 @@ const Hero = () => {
                 </div>
             </div>
         </div>
-        <Foods/>
-        {/* <Menu/> */}
         </>
     );
 }
