@@ -9,7 +9,7 @@ const Navbar = () => {
         <nav>
             <div className='flex justify-between p-4 px-4 fixed w-full bg-yellow-400'>
                 <div className='font-bold text-lg'>
-                    Logo
+                    MB Ofe-Aku
                 </div>
 
                 <div className='block'>
