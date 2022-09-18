@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import Cart from './components/Cart';
-import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Home from './Home';
 import {CartProvider} from 'react-use-cart'
+import './index.css'
 
 function App() {
   return (
