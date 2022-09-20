@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import {useCart} from 'react-use-cart'
+import Checkout from './Checkout';
 
 export default function Cart() {
   const {items, isEmpty, totalItems, totalUniqueItems, cartTotal, updateItemQuantity, removeItem} =useCart();
 
+  const [openModal, setOpenModal] = useState(false);
+
   const delivery = 200;
   const subTotal = parseInt(`${cartTotal}`)
   const sum = delivery +subTotal
+  const pay = sum*100
+  console.log(pay)
+  console.log(typeof(pay))
 
   if(isEmpty) return (
     <div className='py-20 px-4 w-full mx-auto'>
@@ -19,7 +25,8 @@ export default function Cart() {
     </div>)
 
   return (
-    <div className='py-20 px-2 w-full'>
+    <>
+    <div className='py-20 px-2 w-full relative'>
 
       <div className='md:w-10/12 md:mx-auto md:mt-10 shadow-md bg-white p-3'>
 
@@ -91,9 +98,17 @@ export default function Cart() {
           </tbody>
         </table>
 
-        <button className='block w-10/12 md:w-6/12 md:p-4 md:mt-8 mx-auto mt-4 rounded-md font-medium text-base p-2 bg-green-400'> Pay &#8358;{sum}</button>
+        <button onClick={()=>{setOpenModal(true)}} className='block w-10/12 md:w-6/12 md:p-4 md:mt-8 mx-auto mt-9 rounded-md font-medium text-base p-2 bg-green-400'> Proceed to Checkout</button>
       </div>
       </div>
+            
     </div>
+    {openModal&&
+      <div className='fixed top-9 md:top-8 left-0 right-0'>
+
+        <Checkout closeModal={setOpenModal} pay={pay} sum={sum}/>
+      </div>
+      }
+      </>
   )
 }

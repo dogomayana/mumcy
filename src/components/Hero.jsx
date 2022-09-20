@@ -27,14 +27,14 @@ const Hero = () => {
             <div className='w-11/12 md:w-6/12 mt-12 flex justify-between p-3 gap-x-4 md:gap-x-8 mx-auto'>
                 <div className='w-6/12 block py-1 bg-white rounded-md'>
                     <img src='/delivery.png' alt="delivery" className="mx-auto h-10"/>
-                    <p className='text-sm text-center'>Quick delivery within town</p>
+                    <p className='text-xs font-medium text-center'>Quick delivery within town</p>
                 </div>
 
                 <div className='w-6/12 py-1 bg-white rounded-md'>
                     <span className='block my-auto h-auto'>
                         <img src='/paystack1.png' alt="securepayment" className="m-auto h-10 bg-white"/>
                     </span>
-                    <p className='text-sm text-center'>Secured payment</p>
+                    <p className='text-xs font-medium text-center'>Secured payment</p>
                 </div>
             </div>
         </div>
