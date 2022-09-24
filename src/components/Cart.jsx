@@ -12,8 +12,6 @@ export default function Cart() {
   const subTotal = parseInt(`${cartTotal}`)
   const sum = delivery +subTotal
   const pay = sum*100
-  console.log(pay)
-  console.log(typeof(pay))
 
   if(isEmpty) return (
     <div className='py-20 px-4 w-full mx-auto'>
