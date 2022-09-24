@@ -14,8 +14,8 @@ export default function Cart() {
   const pay = sum*100
 
   if(isEmpty) return (
-    <div className='py-20 px-4 w-full mx-auto'>
-      <h1 className='py-20'>
+    <div className='py-20 px-4 w-full mx-auto h-screen'>
+      <h1 className='py-48 my-auto'>
         <Link to='/'>
         Your Cart is empty Go Shopping
         </Link>
