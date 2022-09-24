@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PaystackPop from '@paystack/inline-js'
 
-const value =process.env.REACT_APP_PAYSTACK
+// const value =process.env.REACT_APP_PAYSTACK
 
 export default function Checkout({closeModal, pay, sum}) {
 
