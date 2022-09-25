@@ -11,7 +11,7 @@ const Navbar = () => {
                 <div className='font-bold text-lg'>
                     <span className='cursor-pointer'>
                     <Link to="/">
-                        MB Ofe-Aku
+                        MB Banga-Stew
                     </Link>
                     </span>
                 </div>

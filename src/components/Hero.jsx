@@ -7,7 +7,7 @@ const Hero = () => {
             <div className='md:w-11/12 mx-auto md:flex px-4 md:gap-x-20'>
                 <div className='w-full md:w-[45%] p-1 py-4 mt-6'>
                     <h1 className='text-xl font-bold text-justify'>
-                        Mama Benji Banga-Stew.
+                        MB Banga-Stew (Ofe-aku).
                     </h1>
                     <p className='text-base md:text-lg mt-3 text-justify'>
                         Banga stew is a substitute for the regular tomatoes stew and it&apos;s made with the juice from palm fruit. It can be eaten with any swallow, and any type of food you can your regular stew with.

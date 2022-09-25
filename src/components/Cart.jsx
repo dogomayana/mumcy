@@ -15,7 +15,7 @@ export default function Cart() {
 
   if(isEmpty) return (
     <div className='py-20 px-4 w-full mx-auto h-screen'>
-      <h1 className='py-48 my-auto'>
+      <h1 className='py-48 my-auto underline'>
         <Link to='/'>
         Your Cart is empty Go Shopping
         </Link>
